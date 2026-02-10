@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seli's Event | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <script src="/js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-seedling"></i> Seli's Event
+            </a>
+            <!-- Bouton hamburger -->
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="#portfolio">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#service">Services</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <div class="presentation-container">
+  <div class="image-side">
+    <img src="images/10.jpeg" alt="Susanne - Créatrice florale">
+  </div>
+  
+  <div class="text-side">
+    <h1>Seli's Event</h1>
+    <p class="tagline">Chaque pétale raconte une histoire</p>
+    
+    <div class="content">
+      <p>Je suis Susanne, créatrice florale passionnée spécialisée dans la conception de bouquets d'artistes, décors d'événements et compositions sur mesure.</p>
+      
+      <div class="buttons">
+        <a href="#portfolio" class="btn">Voir plus</a>
+        <a href="#contact" class="btn btn-primary">Réserver ici</a>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="services-section" >
+        <div id="service" class="section-header">
+            <h2><i class="fas fa-gift"></i> Mes Services & Bouquets</h2>
+            <p class="section-subtitle">Des créations uniques à des prix accéssibles</p>
+            <div class="currency-note">
+                <i class="fas fa-info-circle"></i>
+                Tous les prix sont en FCFA (Franc CFA)
+            </div>
+        </div>
+
+        <div class="services-container">
+            <!-- Bouquet Romantique -->
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Bouquet Romantique</h3>
+                    <div class="price-tag">
+                        <span class="price">15 000</span>
+                        <span class="currency">FCFA</span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/ss.jpeg" alt="Bouquet Romantique">
+                </div>
+                <div class="card-body">
+                    <p class="description">Composition élégante de roses rouges et blanches, parfaite pour déclarer votre amour.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check-circle"></i> Roses premium</li>
+                        <li><i class="fas fa-check-circle"></i> Feuillage décoratif</li>
+                        <li><i class="fas fa-check-circle"></i> Emballage cadeau</li>
+                    </ul>
+                   
+                </div>
+                <button class="order-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Commander
+                </button>
+            </div>
+
+            <!-- Bouquet Élégant -->
+            <div class="service-card featured">
+                <div class="featured-badge">
+                    <i class="fas fa-crown"></i> LE PLUS POPULAIRE
+                </div>
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Bouquet Élégant</h3>
+                    <div class="price-tag">
+                        <span class="price">25 000</span>
+                        <span class="currency">FCFA</span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/dd.jpeg" alt="Bouquet Élégant">
+                </div>
+                <div class="card-body">
+                    <p class="description">Mélange sophistiqué d'orchidées et de lys, pour les occasions spéciales.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check-circle"></i> Orchidées rares</li>
+                        <li><i class="fas fa-check-circle"></i> Lys parfumés</li>
+                        <li><i class="fas fa-check-circle"></i> Vase inclus</li>
+                        <li><i class="fas fa-check-circle"></i> Carte personnalisée</li>
+                    </ul>
+                   
+                </div>
+                <button class="order-btn featured-btn">
+                    <i class="fas fa-bolt"></i>
+                    Commander maintenant
+                </button>
+            </div>
+
+            <!-- Bouquet Champêtre -->
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Bouquet Champêtre</h3>
+                    <div class="price-tag">
+                        <span class="price">12 000</span>
+                        <span class="currency">FCFA</span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/ff.jpeg" alt="Bouquet Champêtre">
+                </div>
+                <div class="card-body">
+                    <p class="description">Composition joyeuse de fleurs des champs, fraîche et colorée.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check-circle"></i> Fleurs saisonnières</li>
+                        <li><i class="fas fa-check-circle"></i> Style naturel</li>
+                        <li><i class="fas fa-check-circle"></i> Parfait au quotidien</li>
+                    </ul>
+                   
+                        
+                </div>
+                <button class="order-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Commander
+                </button>
+            </div>
+
+            <!-- Bouquet Mariage -->
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Bouquet de Mariage</h3>
+                    <div class="price-tag">
+                        <span class="price">35 000</span>
+                        <span class="currency">FCFA</span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/jj.jpeg" alt="Bouquet de Mariage">
+                </div>
+                <div class="card-body">
+                    <p class="description">Création sur mesure pour le plus beau jour de votre vie.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check-circle"></i> Consultation personnalisée</li>
+                        <li><i class="fas fa-check-circle"></i> Livraison le jour J</li>
+                    </ul>
+                    
+                </div>
+                <button class="order-btn">
+                    <i class="fas fa-calendar-check"></i>
+                    Réserver consultation
+                </button>
+            </div>
+
+            <!-- Bouquet Décoration -->
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Bouquet Décoration</h3>
+                    <div class="price-tag">
+                        <span class="price">18 000</span>
+                        <span class="currency">FCFA</span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/ll.jpeg" alt="Bouquet Décoration">
+                </div>
+                <div class="card-body">
+                    <p class="description">Composition durable pour embellir votre intérieur.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check-circle"></i> Longue durée de vie</li>
+                        <li><i class="fas fa-check-circle"></i> Style moderne</li>
+                        <li><i class="fas fa-check-circle"></i> Vase design inclus</li>
+                    </ul>
+                    
+                </div>
+                <button class="order-btn">
+                    <i  class="fas fa-shopping-cart"></i>
+                    Commander
+                </button>
+            </div>
+
+            <!-- Abonnement Mensuel -->
+            <div class="service-card subscription">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Abonnement Mensuel</h3>
+                    <div class="price-tag">
+                        <span class="price">45 000</span>
+                        <span class="currency">FCFA/mois</span>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="images/mm.jpeg" alt="Abonnement Mensuel">
+                </div>
+                <div class="card-body">
+                    <p class="description">Recevez un nouveau bouquet chaque mois, une surprise florale régulière !</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check-circle"></i> 1 bouquet/mois</li>
+                        <li><i class="fas fa-check-circle"></i> Livraison incluse</li>
+                        <li><i class="fas fa-check-circle"></i> Variétés surprises</li>
+                        <li><i class="fas fa-check-circle"></i> 10% de réduction</li>
+                    </ul>
+                   
+                       
+                </div>
+                <button class="order-btn subscription-btn">
+                    <i class="fas fa-gem"></i>
+                  Commander
+                </button>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <i class="fas fa-truck"></i>
+            <div class="info-content">
+                <h4>Livraison offerte</h4>
+                <p>À Ouagadougou pour toute commande supérieure à 25 000 FCFA</p>
+            </div>
+        </div>
+
+       
+    </section>
+
+
+
+<!-- Section Portfolio -->
+   <div class="container">
+    <h2 class="section-title" id="portfolio">Mon Portfolio Floral</h2>
+    <div class="portfolio-grid">
+        
+        
+        <div class="portfolio-item">
+            <img src="images/44.jpeg" alt="Mariage romantique" class="portfolio-img">
+            <div class="portfolio-content">
+                <h3>Mariage romantique</h3>
+                <p>Décoration complète de cérémonie et salle de réception avec des roses blanches,</p>
+                <div class="portfolio-tags">
+                    <span class="tag tag-wedding">Mariage</span>
+                    <span class="tag tag-floral">Romantique</span>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="portfolio-item">
+            <img src="images/55.jpeg" alt="Événement d'entreprise" class="portfolio-img">
+            <div class="portfolio-content">
+                <h3>Événement d'entreprise</h3>
+                <p>Décoration pour le lancement d'une entreprise.</p>
+                <div class="portfolio-tags">
+                    <span class="tag tag-event">Événement</span>
+                    <span class="tag">Moderne</span>
+            
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="portfolio-item">
+            <img src="images/33.jpeg" alt="Bouquet signature" class="portfolio-img">
+            <div class="portfolio-content">
+                <h3>Collection</h3>
+                <p>Bouquets artistiques saisonniers romantiques.</p>
+                <div class="portfolio-tags">
+                    <span class="tag">Saisonnier</span>
+                    <span class="tag">Romantiques</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 4 (Nouveau) -->
+        <div class="portfolio-item">
+            <img src="images/66.jpeg" alt="Décoration boutique" class="portfolio-img">
+            <div class="portfolio-content">
+                <h3>Décoration de boutique</h3>
+                <p>Mise en valeur d’un espace commercial avec des compositions florales colorées pour attirer et séduire les clients.</p>
+                <div class="portfolio-tags">
+                    <span class="tag tag-event">Commercial</span>
+                    <span class="tag tag-floral">Coloré</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 5 (Nouveau) -->
+        <div class="portfolio-item">
+            <img src="images/77.jpeg" alt="Décoration résidentielle" class="portfolio-img">
+            <div class="portfolio-content">
+                <h3>Décoration résidentielle</h3>
+                <p>Ambiance florale chaleureuse pour un intérieur chic et élégant.</p>
+                <div class="portfolio-tags">
+                    <span class="tag tag-floral">Résidentiel</span>
+                    <span class="tag">Elégant</span>
+                </div>
+            </div>
+        </div>
+
+         <article class="blog-post">
+                    <img src="images/99.jpeg" alt="Bouquet saisonnier">
+                    <div class="blog-content">
+                        <h3>Les bouquets de saison : un art éphémère</h3>
+                        <p>Chaque saison apporte ses fleurs uniques. Découvrez comment choisir le bouquet parfait selon la période de l’année au Burkina Faso.</p>
+                        
+                    </div>
+                </article>
+    </div>
+</div>
+
+
+  <div class="contact-container" id="contact">
+        <div class="contact-header">
+            <h1>Seli's Event</h1>
+            <p>Contactez-moi pour vos projets floraux</p>
+        </div>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="firstName">Prénom</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Nom</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-user-circle"></i>
+                    <input type="text" id="lastName" name="lastName" placeholder="Votre nom de famille" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-envelope"></i>
+                    <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                Envoyer le message
+            </button>
+        </form>
+        
+        <div class="floral-decoration">
+            <p>🌸 Chaque message est une nouvelle fleur dans mon jardin 🌸</p>
+        </div>
+    </div>
+    
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Seli's Event</h3>
+                <p>Créations florales artistiques et sur mesure à Ouagadougou. Chaque pétale raconte une histoire et chaque bouquet célèbre la beauté naturelle.</p>
+               
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Quartier Bendogo, Ouagadougou, Burkina Faso</p>
+                <p><i class="fas fa-phone"></i> +226 72 75 27 13</p>
+                <p><i class="far fa-envelope"></i> dayambasusanne@gmail.com</p>
+                <p><i class="far fa-clock"></i> Lundi-Samedi: 8h-19h</p>
+            </div>
+            <div class="footer-column">
+                <h3>Liens rapides</h3>
+                <a href="index.html">Portfolio complet</a>
+                <a href="#portfolio">Blog floral</a>
+                <a href="#contact">Demande de devis</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Seli's Event - Créations florales à Ouagadougou. Tous droits réservés.</p>
+           
+        </div>
+    </div>
+</footer>
+
+   
+</body>
+</html>
