@@ -345,12 +345,12 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
   (function(){
-    emailjs.init("PUBLIC_KEY"); // remplace par ta clé publique EmailJS
+    emailjs.init("1h1vdShC-rFXIv3oJ"); // remplace par ta clé publique EmailJS
   })();
 
   document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
-    emailjs.sendForm("SERVICE_ID", "TEMPLATE_ID", this)
+    emailjs.sendForm("service_ywfjbne", "template_6r9d3lr", this)
       .then(() => alert("Message envoyé avec succès !"))
       .catch(error => alert("Erreur : " + JSON.stringify(error)));
   });
