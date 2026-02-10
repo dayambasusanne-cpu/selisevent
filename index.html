@@ -83,10 +83,7 @@
                     </ul>
                    
                 </div>
-                <button class="order-btn">
-                    <i class="fas fa-shopping-cart"></i>
-                    Commander
-                </button>
+                
             </div>
 
             <!-- Bouquet Élégant -->
@@ -117,10 +114,7 @@
                     </ul>
                    
                 </div>
-                <button class="order-btn featured-btn">
-                    <i class="fas fa-bolt"></i>
-                    Commander maintenant
-                </button>
+                
             </div>
 
             <!-- Bouquet Champêtre -->
@@ -148,10 +142,7 @@
                    
                         
                 </div>
-                <button class="order-btn">
-                    <i class="fas fa-shopping-cart"></i>
-                    Commander
-                </button>
+               
             </div>
 
             <!-- Bouquet Mariage -->
@@ -177,10 +168,7 @@
                     </ul>
                     
                 </div>
-                <button class="order-btn">
-                    <i class="fas fa-calendar-check"></i>
-                    Réserver consultation
-                </button>
+                
             </div>
 
             <!-- Bouquet Décoration -->
@@ -207,10 +195,7 @@
                     </ul>
                     
                 </div>
-                <button class="order-btn">
-                    <i  class="fas fa-shopping-cart"></i>
-                    Commander
-                </button>
+                
             </div>
 
             <!-- Abonnement Mensuel -->
@@ -239,10 +224,7 @@
                    
                        
                 </div>
-                <button class="order-btn subscription-btn">
-                    <i class="fas fa-gem"></i>
-                  Commander
-                </button>
+               
             </div>
         </div>
 
@@ -291,7 +273,7 @@
             </div>
         </div>
 
-        <!-- Projet 3 -->
+
         <div class="portfolio-item">
             <img src="images/33.jpeg" alt="Bouquet signature" class="portfolio-img">
             <div class="portfolio-content">
@@ -304,7 +286,6 @@
             </div>
         </div>
 
-        <!-- Projet 4 (Nouveau) -->
         <div class="portfolio-item">
             <img src="images/66.jpeg" alt="Décoration boutique" class="portfolio-img">
             <div class="portfolio-content">
@@ -348,36 +329,32 @@
             <p>Contactez-moi pour vos projets floraux</p>
         </div>
         
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="firstName">Prénom</label>
-                <div class="input-with-icon">
-                    <i class="fas fa-user"></i>
-                    <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
-                </div>
-            </div>
-            
-            <div class="form-group">
-                <label for="lastName">Nom</label>
-                <div class="input-with-icon">
-                    <i class="fas fa-user-circle"></i>
-                    <input type="text" id="lastName" name="lastName" placeholder="Votre nom de famille" required>
-                </div>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message</label>
-                <div class="input-with-icon">
-                    <i class="fas fa-envelope"></i>
-                    <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
-                </div>
-            </div>
-            
-            <button type="submit" class="submit-btn">
-                <i class="fas fa-paper-plane"></i>
-                Envoyer le message
-            </button>
-        </form>
+        <form id="contact-form">
+  <label for="name">Votre nom</label>
+  <input type="text" id="name" name="user_name" required>
+
+  <label for="email">Votre email</label>
+  <input type="email" id="email" name="user_email" required>
+
+  <label for="message">Votre message</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Envoyer</button>
+</form>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("PUBLIC_KEY"); // remplace par ta clé publique EmailJS
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    emailjs.sendForm("SERVICE_ID", "TEMPLATE_ID", this)
+      .then(() => alert("Message envoyé avec succès !"))
+      .catch(error => alert("Erreur : " + JSON.stringify(error)));
+  });
+</script>
         
         <div class="floral-decoration">
             <p>🌸 Chaque message est une nouvelle fleur dans mon jardin 🌸</p>
